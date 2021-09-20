@@ -1,1 +1,5 @@
-<ng-list><ng-list>
+<ng-list
+    [list]="list$ | async"
+    [loading]="loading$ | async"
+>
+<ng-list>

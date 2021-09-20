@@ -4,6 +4,7 @@ import { Observable } from "rxjs";
 import { IGuy } from "../models/guy.interface";
 import * as fromGuys from 'src/app/modules/state-adventure/store';
 import * as actions from 'src/app/modules/state-adventure/store/actions/list.actions';
+import * as selectors from 'src/app/modules/state-adventure/store/selectors/list.selectors';
 
 @Component({
     selector: 'ng-list-container',
@@ -11,13 +12,12 @@ import * as actions from 'src/app/modules/state-adventure/store/actions/list.act
 })
 
 export class ListContainer {
-    // list$: Observable<Array<IGuy>>;
+    list$: Observable<Array<IGuy>>;
+    loading$: Observable<boolean>;
     
     constructor(private store: Store<fromGuys.State>){
         this.store.dispatch(actions.loadList({ id: 1 }));
-        // this.list$ = this.store.select(actions.loadList);
+        this.list$ = this.store.select(selectors.listSelector);
+        this.loading$ = this.store.select(selectors.listSelectorLoading);
     }
-
-
-
 }

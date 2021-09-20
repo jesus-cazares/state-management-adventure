@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 import { IGuy } from "../models/guy.interface";
 
@@ -8,10 +8,8 @@ import { IGuy } from "../models/guy.interface";
 })
 
 export class ListComponent {
-    list: Array<IGuy> = [
-        { name: 'Jesus', lastName: 'Cazares'},
-        { name: 'Pedro', lastName: 'Suarez' }
-    ];
+    @Input() list!: Array<IGuy> | null;
+    @Input() loading!: boolean | null;
 
     constructor() {}
 }
