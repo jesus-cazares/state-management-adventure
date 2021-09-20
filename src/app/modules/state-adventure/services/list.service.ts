@@ -17,6 +17,6 @@ export class ListService {
      * @returns Observable<Array<IGuy> | never>
      */
     getList():Observable< Array<IGuy>> {
-        return of([]);
+        return of([{ name: 'Jos', lastName: 'Jojanes' }]);
     }
 }
