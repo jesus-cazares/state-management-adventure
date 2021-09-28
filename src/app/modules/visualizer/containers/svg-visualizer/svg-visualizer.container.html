@@ -1,0 +1,6 @@
+<app-svg-visualizer
+    *ngIf="svgElements$ | async as elements"
+    [svgElements]="elements"
+    (onSelect)="select($event.index)"
+    (onRemove)="remove($event.index)">
+</app-svg-visualizer>

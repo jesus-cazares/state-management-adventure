@@ -8,7 +8,8 @@ import * as selectors from 'src/app/modules/state-adventure/store/selectors/list
 
 @Component({
     selector: 'ng-list-container',
-    templateUrl: './list.container.html'
+    templateUrl: './list.container.html',
+    styleUrls: [ './list.container.scss' ]
 })
 
 export class ListContainer {

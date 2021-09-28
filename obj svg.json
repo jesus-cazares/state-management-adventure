@@ -1,0 +1,18 @@
+{
+    id: "87387687636EEDEFED",
+    serialNumber: "A3130D",
+    name: "Articulated Bearing"
+    category: "ArticulatedBearing",
+    variableExpression: "@Var@",
+    parameterList: [`@height@`,`@xCorner@`,`@yCorner@`]
+    sideSVG: "<polygon fill=''#09B39C' points='215.135,33 @height@ 197.189,46.955 92,125 ,8.355,171.706 106.387,180.64 236.072,47.955`></polygon>",
+    frontSVG: "<polygon fill=''#09B39C' points='215.135,33 @height@ 197.189,46.955 92,125 ,8.355,171.706 106.387,180.64 236.072,47.955`></polygon>"
+},
+{
+    id: "87387687636EEDEFED",
+    serialNumber: "A3130D",
+    category: "SimpleShaft",
+    variableExpression: "@Var@",
+    parameterList: [`@topXCorner@`,`@topYCorner@`,`@shaftWidth@`,`@shaftHeight@`]
+    svg: "<polygon fill=''#09B39C' points='215.135,33 @height@ 197.189,46.955 92,125 ,8.355,171.706 106.387,180.64 236.072,47.955`></polygon>"
+}

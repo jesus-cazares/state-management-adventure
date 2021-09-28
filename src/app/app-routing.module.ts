@@ -8,11 +8,6 @@ const routes: Routes = [
     path: 'home',
     children: [
       {
-        path: 'editor',
-        component: LayoutComponent,
-        loadChildren: () => import('src/app/modules/bearing-editor/bearing-editor.module').then(m => m.BearingEditorModule)
-      },
-      {
         path: 'list',
         component: LayoutComponent,
         loadChildren: () => import('src/app/modules/state-adventure/state-adventure.module').then(m => m.StateAdventureModule)
