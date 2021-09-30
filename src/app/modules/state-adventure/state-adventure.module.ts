@@ -8,7 +8,7 @@ import { ListContainer } from 'src/app/modules/state-adventure/containers/list.c
 import { StateAdventureRoutingModule } from 'src/app/modules/state-adventure/state-adventure-routing.module';
 import * as fromGuys from 'src/app/modules/state-adventure/store';
 import { ListEffects } from 'src/app/modules/state-adventure/store/effects/list.effects';
-import { VisualizerModule } from 'src/app/modules/visualizer/bearing-editor.module';
+import { VisualizerModule } from 'src/app/modules/visualizer/visualizer.module';
 
 @NgModule({
     declarations: [ ListComponent, ListContainer],

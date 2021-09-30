@@ -4,7 +4,7 @@ import * as snapSvg from 'snapsvg';
 import { VisulaizerConstants } from 'src/app/configs/visualizer.constants';
 import { ISvgElement } from 'src/app/shared/models/commons/svg-element.interface';
 
-declare var Snap: typeof snapSvg;
+declare const Snap: typeof snapSvg;
 
 @Component({
     selector: 'app-svg-visualizer',
